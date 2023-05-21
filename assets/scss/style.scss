@@ -1,0 +1,14 @@
+// 모든 scss를 불러오기
+
+
+@import './utils/var'; //변수세팅
+@import './utils/mixins'; //활활용가능한 소스를 미리 짜두고 쓸수있다
+
+@import './base/typo'; //폰트
+@import './base/reset'; //리셋
+@import './base/common'; //공통
+
+@import './layout/header'; //헤더
+@import './layout/footer'; //푸터
+
+@import './page/main'; //메인

@@ -1,0 +1,141 @@
+.blind{
+    width: 1px; height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+/*
+* load page
+*/
+.load-page{
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 60;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    .load-page-inner{
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        position: relative;
+        .group-top{
+            .top-list{
+                display: flex;
+                justify-content: space-between;
+                .top-item{
+                    text-align: right;
+                }
+            }
+        }
+        .group-load{
+            font-size: 30px;
+            .circle{
+                border: 1px solid  #FF5A81;
+                padding: 80px 300px;
+                border-radius: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                &.large{
+                    padding: 70px 250px;
+                }
+            }
+            .txt{
+                font-family: 'Juanito';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+/*
+* cursor
+*/
+.cursor-wrap{
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    /* 외형은 보이되 선택되지않게 */
+    position: fixed;
+    top: 0;left: 0;
+    border-radius: 1px solid #000;
+    @include mobile{
+        display: none;
+    }
+    .cursor{
+        width: 30px;
+        height: 30px; 
+    }
+}
+
+/*
+* main
+*/
+.sc-inner{
+    padding: 40px 40px;
+}
+.headline{
+    font-size: 100px;
+    line-height: 80px;
+    font-family: 'Juanito';
+}
+.desc{
+    line-height: 40px;
+    font-size: 40px;
+    text-align: right;
+}
+.txt-area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .headline{
+        flex: 1;
+    }
+    .desc{
+        flex: 1;
+        span{
+            display: block;
+        }
+    }
+}
+
+// yujin-box balloon
+.balloon{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    border-radius: 20PX;
+    background-color: #FF5A81;
+    text-align: center;
+    .tail{
+        position: absolute;
+        width: 14px;
+        height: 17px;
+        bottom: -2px;
+        left: -4px;
+        transform: scaleX(-1);
+        .path{
+            fill: #FF5A81;
+        }
+    }
+}
+
+
