@@ -593,6 +593,9 @@ body {
   position: relative;
   padding-bottom: 11vw;
 }
+.sc-project .head-wrap .headline-box .text{
+  padding-top: 30px;
+}
 .sc-project .headline {
   position: relative;
 }
@@ -679,6 +682,62 @@ body {
   transition: all 0.5s;
   fill: #eee;
 }
+
+.sc-project .project-item.new .item .svg .path{
+  fill: #FFCAD4E0;
+}
+.sc-project .project-item.new .item.pink:hover {
+  fill: #000;
+}
+
+.sc-project .project-item.new .item:hover .path {
+  fill: #000;
+}
+
+.sc-project .project-item.new .item .svg .path-border {
+  fill: #eee;
+}
+
+.sc-project .project-item.new .item .txt-box .text {
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+.sc-project .project-item.new .item.num1 .title {
+  width: 110px;
+  height: 36px;
+  position: relative;
+  background: url(../img/sunchang.png) no-repeat 100% center/cover;
+}
+.sc-project .project-item.new .item.num1:hover .title {
+  background: url(../img/sunchang_w.png) no-repeat 100% center/cover;
+}
+
+.sc-project .project-item.new .item.num2 .title {
+  width: 130px;
+  height: 37px;
+  position: relative;
+  background: url(../img/hwa_rak.png) no-repeat 100% center/cover;
+}
+.sc-project .project-item.new .item.num2:hover .title {
+  background: url(../img/hwarack.png) no-repeat 100% center/cover;
+}
+
+.sc-project .project-item.new .item.num3 .title {
+  width: 130px;
+  height: 20px;
+  position: relative;
+  background: url(../img/tabeko.png) no-repeat 100% center/cover;
+}
+.sc-project .project-item.new .item.num3:hover .title {
+  background: url(../img/tabeko_w.png) no-repeat 100% center/cover;
+}
+
+
+
+
 .sc-project .project-item .item .svg .path-border {
   fill: #000;
 }
@@ -741,7 +800,7 @@ body {
   grid-row-start: 1;
 }
 .sc-project .project-item .item.num2 .title {
-  width: 40px;
+
 }
 .sc-project .project-item .item.num2 .badge {
   border: 1px solid #007042;
