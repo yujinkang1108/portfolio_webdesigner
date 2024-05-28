@@ -68,6 +68,11 @@
   src: url(../fonts/Pretendard-Bold.woff);
   font-weight: 700;
 }
+@font-face {
+  font-family: 'CWDangamAsac-Bold';
+  src: url(../fonts/ChangwonDangamAsac-Bold_0712\ 2.otf);
+  font-weight: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -786,8 +791,8 @@ body {
   grid-row-start: 1;
 }
 .sc-project .project-item .item.num1 .title {
-  font-family: "SBAggroB";
-  font-size: 20px;
+  font-family: 'CWDangamAsac-Bold';
+  font-size: 30px;
   color: #727CFF;
 }
 .sc-project .project-item .item.num1 .badge {
